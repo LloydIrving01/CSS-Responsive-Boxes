@@ -1,3 +1,45 @@
+/*General*/
+
+* {
+  border: 2px solid black;
+}
+
+
 body {
   background: blanchedalmond;
+}
+
+.container {
+  display: flex;
+  min-height: 97vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header,
+main,
+footer {
+  flex-grow: 1;
+  margin: 0.5em;
+}
+
+main {
+  flex-grow: 3;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  header,
+  main,
+  footer {
+    margin: 1em;
+  }
 }
